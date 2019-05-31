@@ -1,0 +1,37 @@
+.icon-container {
+
+}
+
+.icon {
+    margin:auto;
+
+    &--img {
+        display: block;
+        border-radius: 100%;
+        width: 45px;
+        height: 45px;
+        text-align: center;
+        line-height: 54px;
+    }
+
+    &--img:hover {
+        color: white;
+    }
+
+    &--background {
+        border-radius: 100%;
+        width: 0px;
+        height: 0px;
+        background-size: 0 0;
+        transition: all 1s ease-in;
+        -moz-transition: all 1s ease-in;
+        -web-kit-transition: all 1s ease-in;
+    }
+
+    &--background:hover {
+        transform-origin: center;
+        background-color: blue;
+        height: 45px;
+        width: 45px;
+    }
+}
