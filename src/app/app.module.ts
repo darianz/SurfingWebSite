@@ -7,12 +7,14 @@ import { HeaderComponent } from './header/header.component';
 // Carrousel
 import { ImagesCarrouselComponent } from './images-carrousel/images-carrousel.component';
 import { CarouselModule } from 'ngx-carousels';
+import { SocialIconsComponent } from './social-icons/social-icons.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    ImagesCarrouselComponent
+    ImagesCarrouselComponent,
+    SocialIconsComponent
   ],
   imports: [
     BrowserModule,
