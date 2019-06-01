@@ -2,6 +2,7 @@
     position: fixed;
     top: 50%;
     right: 10%;
+    transform: translateY(-50%);
 }
 
 .icon {
@@ -42,12 +43,14 @@
         &--yt {
             background-color: rgba(230, 68, 68, 0.76);
         }
-    }
 
-    &__background::after {
-        content: "";
-        height: 45px;
-        width: 45px;
+        &--inst {
+            background-color: rgba(219, 34, 136, 0.76);
+        }
+
+        &--twi {
+            background-color: rgba(18, 151, 192, 0.76);
+        }
     }
 
     a {
@@ -55,12 +58,13 @@
         text-decoration: none;
     }
 
-    &__bgi {
-        display: block;
-        height: 45px;
-        width: 45px;
-        background: url(src\assets\icons\iconfinder_youtube__logo__social__media_icons_2986075.svg);
-        background-size: 45px 45px;
-    }
+    //Not working, remote svg cant be modified
+    // &__bgi {
+    //     display: block;
+    //     height: 45px;
+    //     width: 45px;
+    //     background: url(src\assets\icons\iconfinder_youtube__logo__social__media_icons_2986075.svg);
+    //     background-size: 45px 45px;
+    // }
 
 }
