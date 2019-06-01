@@ -18,9 +18,9 @@
             transform-origin: center;
         }
 
-        .icon__img {    //change icon to white after hover animation finish (not working)
-            fill: white !important;
-        }
+        // .icon__img {    //change icon to white after hover animation finish (not working)
+        //     fill: white !important;
+        // }
     }
     
     &__background {
@@ -29,9 +29,9 @@
         width: 45px;
         position: absolute;
         transform: scale(0);
-        transition: all 0.5s ease-in;
-        -moz-transition: all 0.5s ease-in;
-        -web-kit-transition: all 0.5s ease-in;
+        transition: all 0.5s ease-out;
+        -moz-transition: all 0.5s ease-out;
+        -web-kit-transition: all 0.5s ease-out;
         
         z-index: -1;
 
