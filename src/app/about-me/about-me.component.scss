@@ -1,0 +1,26 @@
+@import "../../scss/layout/grid";
+
+.about_me{
+    &_container {
+        text-align: right;
+    }
+
+    &_text {
+        display: block;
+    }
+    
+
+    &_box {
+        margin-top: 3rem;
+        display: inline-block;
+        border: 1px solid black;
+        width: 15rem;
+        height: 15rem;
+        text-align: center;
+        &_img {
+            width: 100%;
+            height: 80%;
+        }
+    }
+}
+

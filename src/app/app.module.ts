@@ -8,13 +8,15 @@ import { HeaderComponent } from './header/header.component';
 import { ImagesCarrouselComponent } from './images-carrousel/images-carrousel.component';
 import { CarouselModule } from 'ngx-carousels';
 import { SocialIconsComponent } from './social-icons/social-icons.component';
+import { AboutMeComponent } from './about-me/about-me.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ImagesCarrouselComponent,
-    SocialIconsComponent
+    SocialIconsComponent,
+    AboutMeComponent
   ],
   imports: [
     BrowserModule,
