@@ -9,6 +9,7 @@ import { ImagesCarrouselComponent } from './images-carrousel/images-carrousel.co
 import { CarouselModule } from 'ngx-carousels';
 import { SocialIconsComponent } from './social-icons/social-icons.component';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AboutMeComponent } from './about-me/about-me.component';
     HeaderComponent,
     ImagesCarrouselComponent,
     SocialIconsComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
