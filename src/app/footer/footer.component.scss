@@ -1,0 +1,43 @@
+@import "../../scss/abstracts/variables";
+@import "../../scss/layout/grid";
+
+.footer {
+    display: block;
+    margin-top: -15rem;
+    width: 100%;
+    height: 40vh;
+    background-image: linear-gradient(to bottom right, rgba($maincolor, 0.8), rgba($maincolor-dark, 0.8)), url('https://images.pexels.com/photos/1626397/pexels-photo-1626397.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-size: cover;
+    background-position: center;
+    -webkit-clip-path: polygon(0 30%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 30%, 100% 0, 100% 100%, 0% 100%);
+
+    color: $maincolor-light;
+
+    &__side-img {
+        margin: 10rem auto 0 auto;
+        width: 10rem;
+        height: 10rem;
+        background-image: url('https://scontent.fsdv2-1.fna.fbcdn.net/v/t1.0-9/48370704_10215838794636568_3502286418158288896_n.jpg?_nc_cat=107&_nc_ht=scontent.fsdv2-1.fna&oh=b369069d65f3cd87a349b539be135a6f&oe=5D88F667');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        border-radius: 100%;
+    }
+    
+    &__links{
+        margin-top: 10rem;
+
+        &__link {
+            display: block;
+            margin: 2rem 0rem 0 20%;
+            text-decoration: none;
+            color: $maincolor-bright;
+        }
+    }
+
+    &__text {
+        margin-top: 10rem;
+    }
+}
