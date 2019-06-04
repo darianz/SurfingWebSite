@@ -19,13 +19,14 @@
         height: 20rem;
         width: 12rem;
         margin: auto;
+        background-color: white;
 
         &__img {
             background-image: url('../../assets/Shta.jpg');
             background-position: center;
             background-repeat: no-repeat;
-            height: 45px;
-            width: 45px;
+            height: 55px;
+            width: 55px;
             border-radius: 200%;
             margin: auto;
 
@@ -36,10 +37,15 @@
             text-transform: uppercase;
             font-size: 18px;
             font-family:  "Arial Black", Gadget, sans-serif;
+            margin-top: 2rem;
         }
 
         &__text {
-            text-align: right;
+            text-align: center;
+            
+            margin-top: 2rem;
+            line-height: 2;
+            
             
             
             

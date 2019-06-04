@@ -1,10 +1,17 @@
 import { Component, OnInit } from '@angular/core';
+import { trigger, state, transition, style, animate } from '@angular/animations';
+import { navButtonShow} from '../animations';
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.scss']
+  styleUrls: ['./navbar.component.scss'],
+  animations: [
+    navButtonShow
+  ]
 })
+
+
 export class NavbarComponent implements OnInit {
 
   constructor() { }
@@ -32,7 +39,7 @@ export class NavbarComponent implements OnInit {
 //   padding-top: 60px;
 // }
 
-// JS FOR STICJY NAVBAR
+// JS FOR STICKY NAVBAR
 // <script>
 // window.onscroll = function() {myFunction()};
 
