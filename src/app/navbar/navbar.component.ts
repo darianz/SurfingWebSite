@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, HostListener } from '@angular/core';
 import { trigger, state, transition, style, animate } from '@angular/animations';
 import { navButtonShow} from '../animations';
 
@@ -7,17 +7,44 @@ import { navButtonShow} from '../animations';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss'],
   animations: [
-    navButtonShow
+    navButtonShow,
+  
   ]
 })
 
 
 export class NavbarComponent implements OnInit {
+  
+  @ViewChild('stickyMenu') menuElement: ElementRef;
+  state: any;
+  sticky: boolean = false;
+  menuPosition: any;
+
+  @HostListener('window:scroll', ['$event'])
+    handleScroll(){
+        const windowScroll = window.pageYOffset;
+        if(windowScroll >= this.menuPosition){
+            this.sticky = true;
+        } else {
+            this.sticky = false;
+        }
+    }
+
 
   constructor() { }
 
   ngOnInit() {
 
+
+  }
+
+  ngAfterViewInit(){
+    this.menuPosition = this.menuElement.nativeElement.offsetTop
+}
+
+  ClickAnimation() {
+     alert('button clicked');
+     this.state = 'clicked';
 
   }
 
