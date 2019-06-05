@@ -2,6 +2,11 @@
 @import "../../scss/abstracts/variables";
 @import "../../scss/base/animations";
 
+
+.row{
+    justify-content:center;
+}
+
 .aboutme{
 
     
@@ -10,6 +15,7 @@
         margin-top: -50vh;
         padding: 50vh 0 3rem 0;
         text-align: center;
+        
         color: $maincolor-dark;
         background-color: $maincolor-light;
     }
@@ -17,6 +23,7 @@
     &__h1 {
         text-align: center;
         font-size: 130%;
+        
     }
 
     &__text {

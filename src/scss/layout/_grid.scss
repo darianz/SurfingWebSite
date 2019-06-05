@@ -8,6 +8,8 @@
 
 $gutter-vertical :  8rem;
 $gutter-horizontal : 4rem;
+
+/*
 .row {
     max-width: 70%;
     margin: 0 auto;
@@ -15,6 +17,8 @@ $gutter-horizontal : 4rem;
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
     }
+
+    
     
     @include clearfix;
 
@@ -52,3 +56,5 @@ $gutter-horizontal : 4rem;
     }
 
 }
+
+*/
