@@ -15,6 +15,7 @@ import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { RecommendationsComponent } from './recommendations/recommendations.component';
+import { BackToTopComponent } from './back-to-top/back-to-top.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { RecommendationsComponent } from './recommendations/recommendations.comp
     FooterComponent,
     NavbarComponent,
     ContactUsComponent,
-    RecommendationsComponent
+    RecommendationsComponent,
+    BackToTopComponent
   ],
   imports: [
     BrowserModule,

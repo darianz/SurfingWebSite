@@ -1,6 +1,12 @@
 <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Roboto:400" />
 <nav class="nav__container container-fluid" #stickyMenu [class.sticky] = "sticky">
   <div class="nav__box" @navButtonShow>
-    <p class="nav__button" (click) = "ClickAnimation()" >Click me</p>
+    <p class="nav__button" (click) = "ClickAnimation()"  >Home</p>
+  </div>
+  <div class="nav__box" @navButtonShow>
+    <p class="nav__button" (click) = "ClickAnimation()"  >About Me</p>
+  </div>
+  <div class="nav__box" @navButtonShow>
+    <p class="nav__button" (click) = "ClickAnimation()"  >Contact</p>
   </div>
 </nav>

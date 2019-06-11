@@ -22,8 +22,13 @@
     
     &__h1 {
         text-align: center;
-        font-size: 130%;
+        font-size: 200%;
+        //margin-top: 4rem !important;
         
+    }
+
+    &__h1row {
+        margin-top: 2rem;
     }
 
     &__text {

@@ -24,6 +24,7 @@
         display: inline-block;
         background-color: $maincolor-bright;
         width: 100%;
+        text-align: center;
         
     }
 
@@ -31,8 +32,11 @@
         background: $maincolor;
         width: 180px;
         padding: 4px 0;
-    
+        display: inline-block;
         position: relative;
+        margin: auto;
+        margin-left: 1vh;
+        margin-right: 1vh;
         // left: 50%;
         // top: 50%;
         // transform: translateX(-50%) translateY(-50%);
