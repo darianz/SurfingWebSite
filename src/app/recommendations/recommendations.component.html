@@ -1,13 +1,13 @@
 <div class="recommendations__container">
   <div class="recommendations__overlay">
-      <div class="recommendations__box">
-        <div class="recommendations__box__img"></div>
-        <div class="recommendations__box__name"><span>Gervais</span> </div>
-        <div class="recommendations__box__text"><span>Been looking for something exactly like this. Pretty pumped!</span></div>
-        <div class="recommendations__box__icon"></div>
-      </div>
+    <div class="recommendations__box" *ngFor="let recommendation of recommendations">
+      <div><img class="recommendations__box__img" src="{{recommendation.img}}" ></div>
+      <div class="recommendations__box__name"><span>{{recommendation.name}}</span> </div>
+      <div class="recommendations__box__text"><span>{{recommendation.text}}</span></div>
+      <div class="recommendations__box__icon"></div>
+
     </div>
-    
+
+  </div>
+
 </div>
-
-
