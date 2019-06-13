@@ -13,7 +13,27 @@
     }
 
     &__overlay{
-        
+        height: 100%;
+        width: 100%;
+        position: relative;
+
+        &__left {
+            height: 100%;
+            width: 3rem;
+            position: absolute;
+            left: 3%;
+            top: 50%;
+            transform: translate(-50%, 0);
+        }
+
+        &__right {
+            height: 100%;
+            width: 3rem;
+            position: absolute;
+            left: 97%;
+            top: 50%;
+            transform: translate(-50%, 0);
+        }
     }
 
     &__box {
@@ -21,10 +41,11 @@
         display: inline-block;
         height: 20rem;
         width: 12rem;
-        margin: auto;
+        margin: auto 1.5rem;
         background-color: white;
         box-shadow: 0 2px 2px rgba(0,0,0,0.2), 0 0 2px rgba(0,0,0,0.1);
-        margin-left: 4rem;
+        transform: translateX(3rem);
+        // margin-left: 4rem;
 
         &__img {
             // background-image: url('../../assets/Shta.jpg');
@@ -32,7 +53,8 @@
             height: 55px;
             width: 55px;
             border-radius: 200%;
-            margin: auto;
+            margin: 1rem 50%;
+            transform: translateX(-50%);
 
         }
 
