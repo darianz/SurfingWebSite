@@ -12,11 +12,11 @@
   background-color: $maincolor-light
 }
 .contact-us{
-  width: 320px;
+  width: 36rem;
   background-color: $maincolor-deep;
   padding: 50px;
   margin: 3rem auto 20rem auto;
-  border-radius: 30px;
+  border-radius: 5px;
   position: relative;
 }
 
@@ -40,22 +40,22 @@
   background: #ebeef1;
   border: 0px;
   outline: none;
-  border-radius: 30px;
+  border-radius: 5px;
   text-align: right;
 }
 
 .form-items .input.message{
   height: 125px;
-  border-radius: 15px;
+  border-radius: 5px;
 
 }
 
 .btn{
-  background: $maincolor-dark;
+  background: $maincolor-constract;
   text-align: center;
   color: #fff;
   padding: 12px;
-  border-radius: 25px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
