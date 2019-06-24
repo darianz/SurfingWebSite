@@ -9,6 +9,7 @@ import { HeaderComponent } from './header/header.component';
 // Carrousel
 import { ImagesCarrouselComponent } from './images-carrousel/images-carrousel.component';
 import { CarouselModule } from 'ngx-carousels';
+// End Of Carrousel
 import { SocialIconsComponent } from './social-icons/social-icons.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { FooterComponent } from './footer/footer.component';
@@ -16,6 +17,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { RecommendationsComponent } from './recommendations/recommendations.component';
 import { BackToTopComponent } from './back-to-top/back-to-top.component';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { SlickCarouselComponent } from './slick-carousel/slick-carousel.component';
+
 
 @NgModule({
   declarations: [
@@ -28,13 +32,17 @@ import { BackToTopComponent } from './back-to-top/back-to-top.component';
     NavbarComponent,
     ContactUsComponent,
     RecommendationsComponent,
-    BackToTopComponent
+    BackToTopComponent,
+    SlickCarouselComponent
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CarouselModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    SlickCarouselModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
