@@ -1,6 +1,6 @@
 <div class="recommendations__container">
   <div class="recommendations__overlay">
-    <div class="recommendations__overlay__left">
+    <div class="recommendations__overlay__left" (click) = "LeftClick()">
       <svg height="52px" viewBox="0 0 512 512" width="52px" xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink">
         <linearGradient id="a" gradientUnits="userSpaceOnUse" x1="256" x2="256" y1="0" y2="512">
@@ -12,7 +12,7 @@
           fill="url(#a)" />
       </svg>
     </div>
-    <div class="recommendations__overlay__right">
+    <div class="recommendations__overlay__right" (click) = "RightClick()">
       <svg height="52px" viewBox="0 0 512 512" width="52px" xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink">
         <linearGradient id="a" gradientUnits="userSpaceOnUse" x1="256" x2="256" y1="0" y2="512">

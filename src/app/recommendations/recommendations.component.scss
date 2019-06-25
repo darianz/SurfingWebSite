@@ -43,8 +43,9 @@
         margin: auto 1.5rem;
         background-color: white;
         box-shadow: 0 2px 2px rgba(0,0,0,0.2), 0 0 2px rgba(0,0,0,0.1);
-        transform: translateX(3rem);
+        // transform: translateX(3rem);
         // margin-left: 4rem;
+        transition: transform 250ms ease-in;
 
         &__img {
             // background-image: url('../../assets/Shta.jpg');

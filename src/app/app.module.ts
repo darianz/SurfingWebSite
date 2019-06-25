@@ -17,8 +17,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { RecommendationsComponent } from './recommendations/recommendations.component';
 import { BackToTopComponent } from './back-to-top/back-to-top.component';
-import { SlickCarouselModule } from 'ngx-slick-carousel';
-import { SlickCarouselComponent } from './slick-carousel/slick-carousel.component';
+
 
 
 @NgModule({
@@ -32,16 +31,16 @@ import { SlickCarouselComponent } from './slick-carousel/slick-carousel.componen
     NavbarComponent,
     ContactUsComponent,
     RecommendationsComponent,
-    BackToTopComponent,
-    SlickCarouselComponent
+    BackToTopComponent
+   
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CarouselModule,
-    BrowserAnimationsModule,
-    SlickCarouselModule
+    BrowserAnimationsModule
+    
     
   ],
   providers: [],

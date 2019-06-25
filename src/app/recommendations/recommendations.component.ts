@@ -7,7 +7,7 @@ import {cardModel} from './cardModel';
   styleUrls: ['./recommendations.component.scss']
 })
 export class RecommendationsComponent implements OnInit {
-
+  obj;
   example1 = new cardModel('example1', '../../assets/Shta.jpg', 'dummy text 1','dwad');
   example2 = new cardModel('example2', '../../assets/Shta.jpg', 'dummy text 2','dwad');
   example3 = new cardModel('example3', '../../assets/Shta.jpg', 'dummy text 3','dwad');
@@ -23,6 +23,14 @@ export class RecommendationsComponent implements OnInit {
   ngOnInit() {
 
   }
+  LeftClick() {
+    this.obj = this.recommendations.shift();
+    this.recommendations.push(this.obj);
+  }
 
+  RightClick()  {
+    this.obj = this.recommendations.pop();
+    this.recommendations.unshift(this.obj);
+  }
 }
 
