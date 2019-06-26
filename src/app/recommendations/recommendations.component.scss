@@ -46,7 +46,9 @@
         // transform: translateX(3rem);
         // margin-left: 4rem;
         transition: transform 250ms ease-in;
-
+        position: relative;
+        overflow: hidden;
+        
         &__img {
             // background-image: url('../../assets/Shta.jpg');
            

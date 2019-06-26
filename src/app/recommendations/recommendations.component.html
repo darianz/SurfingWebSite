@@ -24,7 +24,7 @@
           fill="url(#a)" />
       </svg>
     </div>
-    <div class="recommendations__box" *ngFor="let recommendation of recommendations">
+    <div class="recommendations__box"[@moveState] = "stateName" @fadeIn @leftToRight *ngFor="let recommendation of recommendations">
       <img class="recommendations__box__img" src="{{recommendation.img}}">
       <div class="recommendations__box__name"><span>{{recommendation.name}}</span> </div>
       <div class="recommendations__box__text"><span>{{recommendation.text}}</span></div>
